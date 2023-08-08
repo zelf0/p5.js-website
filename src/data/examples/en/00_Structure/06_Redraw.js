@@ -7,19 +7,14 @@
 
 let y;
 
-// The statements in the setup() function
-// execute once when the program begins
 function setup() {
   createCanvas(720, 400);
   stroke(255);
+    // Make the draw()function only run once.
   noLoop();
   y = height * 0.5;
 }
 
-// The statements in draw() are executed until the
-// program is stopped. Each statement is executed in
-// sequence and after the last line is read, the first
-// line is executed again.
 function draw() {
   background(0);
   y = y - 4;
@@ -30,5 +25,6 @@ function draw() {
 }
 
 function mousePressed() {
+  // When the mouse is clicked, run draw() one additional time.
   redraw();
 }

@@ -12,6 +12,8 @@ function setup() {
 function draw() {
   background(127);
   noStroke();
+  // Draw rectancles using the width and height variables
+  // which evaluate to 720 and 400 as defined by createCanvas() in setup().
   for (let i = 0; i < height; i += 20) {
     fill(129, 206, 15);
     rect(0, i, width, 10);

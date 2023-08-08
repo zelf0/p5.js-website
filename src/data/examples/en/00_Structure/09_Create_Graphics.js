@@ -10,6 +10,7 @@ let pg;
 
 function setup() {
   createCanvas(710, 400);
+  // Create a p5.Renderer object of width 400 and height 250.
   pg = createGraphics(400, 250);
 }
 
@@ -20,6 +21,7 @@ function draw() {
   noStroke();
   ellipse(mouseX, mouseY, 60, 60);
 
+  // Draw to the p5.Renderer object we created in setup().
   pg.background(51);
   pg.noFill();
   pg.stroke(255);
